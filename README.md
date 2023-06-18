@@ -1,0 +1,1 @@
+Este é um projeto de lojinha de roupa para tentar aprofundar melhor no conceito de classes em JavaScript.

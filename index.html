@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madame Chic</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="criarRoupa" id="criarRoupa">
+        <h1>Adicionar</h1>
+        <div class="campoForm">
+            <label>Nome</label>
+            <input type="text" name="f_nome" id="f_nome" value="" autocomplete="off">
+        </div>
+
+        <div class="campoForm">
+            <label>Marca</label>
+            <input type="text" name="f_marca" id="f_marca" value="" autocomplete="off">
+        </div>
+
+        <div class="campoForm">
+            <label>Quantidade</label>
+            <input type="number" name="f_quantidade" id="f_quantidade" value="">
+        </div>
+
+        <div class="campoForm">
+            <label>Foto</label>
+            <input type="file" name="f_imagem" id="f_imagem">
+        </div>
+
+        <div class="campoForm">
+            <label>Tipo</label>
+            <select name="f_select" id="f_select">
+                <option value="f_camisa">Camisa</option>
+                <option value="calca">Calça</option>
+                <option value="f_cropped">Cropped</option>
+            </select>
+        </div>
+
+        <div class="campoForm">
+            <button id="btn_addRoupa" class="btn_addRoupa">Adicionar <i class="fa-duotone fa-plus"></i> </button>
+        </div>
+    </div>
+
+    <div id="roupas" class="roupas">
+        <h1>Vestuário</h1>
+        <!-- <div class="roupa">Calça</div> -->
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/8e9cc19741.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
