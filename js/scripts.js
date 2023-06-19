@@ -50,11 +50,35 @@ const gerenciarExibicaoRoupas = () => {
         const div = document.createElement('div')
         div.setAttribute("class", "roupa")
         div.setAttribute("data-nome", r.nome)
+
+        let input = document.createElement('input')
+        input.type = "file"
+        input.setAttribute("class", "input")
+
+        input.addEventListener('change', () => {
+            img.src = URL.createObjectURL(input.files[0])
+        })
+
+        let roupaImg = document.createElement('div')
+        roupaImg.setAttribute("class", "roupaImg")
+
+        let img = document.createElement('img')
+
         div.innerHTML = `Nome: ${r.nome}<br/>`
         div.innerHTML += `Marca: ${r.marca}<br/>`
         div.innerHTML += `Quantidade: ${r.quantidade}<br/>`
         div.innerHTML += `Tipo: ${r.tipo}<br/>`
         roupas.appendChild(div)
+        div.appendChild(input)
+        div.appendChild(roupaImg)
+        roupaImg.appendChild(img)
     })
 }
+
+
+
+
+
+
+
 
